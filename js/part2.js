@@ -5,7 +5,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
 
     const addFeni = getInput('feni-donate-input');
 
-    if(isNaN(addFeni) || addFeni < 0){
+    if(isNaN(addFeni) || addFeni <= 0){
         alert('Donation amount is not valid');
         return;
         
@@ -29,9 +29,15 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(ev
             timeStyle: 'medium',
             dateStyle: 'full'
         });
+         
+        const h2 =document.createElement('h2');
+        h2.classList.add('divider');
 
         document.getElementById('history-form').appendChild(p);
         document.getElementById('history-form').appendChild(h1);
+        document.getElementById('history-form').appendChild(h2);
+
+        popUp.showModal();
     }
 
     

@@ -6,3 +6,7 @@ document.getElementById('donation').addEventListener('click', function(){
 document.getElementById('history').addEventListener('click', function(){
  showPageById('history-add');
 });
+
+
+
+

@@ -6,7 +6,7 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
 
     const addQuota = getInput('quota-input');
 
-    if(isNaN(addQuota) || addQuota < 0){
+    if(isNaN(addQuota) || addQuota <= 0 ){
         alert('Donation amount is not valid');
         return;
         
@@ -31,8 +31,14 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
             dateStyle: 'full'
         });
 
+        const h2 =document.createElement('h2');
+        h2.classList.add('divider');
+
         document.getElementById('history-form').appendChild(p);
         document.getElementById('history-form').appendChild(h1);
+        document.getElementById('history-form').appendChild(h2);
+
+        popUp.showModal();
     }
 
     
