@@ -58,14 +58,14 @@
            </div>
     
             <div class="mt-16 text-center space-x-2">
-                <button class="btn btn-outline hover:bg-color-primary duration-300 easy-in-out hover:text-black">Donation</button>
-                <button class="btn btn-outline hover:bg-color-primary duration-300 easy-in-out hover:text-black">History</button>
+                <button id="donation" class="btn btn-outline hover:bg-color-primary duration-300 easy-in-out hover:text-black">Donation</button>
+                <button id="history" class="btn btn-outline hover:bg-color-primary duration-300 easy-in-out hover:text-black">History</button>
              </div>
      
 
     </nav>
      
-    <main>
+    <main id="donate-container" class="">
         <!-- Noakhali part starts -->
    <div class="mt-8 w-11/12 mx-auto border rounded-lg md:flex md:flex-row flex-col md:p-6 p-4">
     <div class="md:w-1/2 w-full">
@@ -123,10 +123,22 @@
        </div>
 
     <!-- quota movement ends -->
+    
     </main>
+   
+     <!-- history starts -->
+
+     <div id="history-add" class="hidden w-11/12 mx-auto mt-4">
+        <div id="history-form" class="history-container border rounded-lg space-y-5 px-3 py-3 ">
+         
+        </div>
+     </div>
+     <!-- history ends -->
+
    <script src="./js/utilities.js"></script>
    <script src="./js/part1.js"></script>
    <script src="./js/part2.js"></script>
    <script src="./js/part3.js"></script>
+   <script src="./js/feature.js"></script>
 </body>
 </html>

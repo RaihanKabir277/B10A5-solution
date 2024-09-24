@@ -20,5 +20,20 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
         const mainBalance = getValueFromText('main-balance');
         const main = mainBalance - addQuota;
         document.getElementById('main-balance').innerText = main
+
+        const p = document.createElement('p');
+        p.innerText = `${addQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh` ;
+        p.classList.add('font-bold');
+        const h1 = document.createElement('h1');
+        h1.innerText = new Date().toLocaleString('en-Us', {
+            timeZone: 'Asia/Dhaka',
+            timeStyle: 'medium',
+            dateStyle: 'full'
+        });
+
+        document.getElementById('history-form').appendChild(p);
+        document.getElementById('history-form').appendChild(h1);
     }
+
+    
 })
